@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PERSONAL WEBSITE</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>WELCOME TO MY WEBSITE</h1>
+        <p>Hello there! I'm Lyndolf M. Adrias, and I'm thrilled to welcome you to my corner of the internet. This website is a reflection of who I am, what I'm passionate about, and what I can offer to the digital world.</p>
+
+    </header>
+
+    <nav>
+<button onclick="showSection('about')">About</button>
+<button onclick="showSection('education')">Education</button>
+<button onclick="showSection('skills')">Skills</button>
+<button onclick="showSection('hobbies')">Hobbies</button>
+<button onclick="showSection('photo')">Photo</button>
+<button onclick="showSection('contact')">Contact</button>
+    </nav>
+    <div class="container">
+        <section id="about" class="section">
+            <h2>ABOUT ME</h2>
+            <p>Hi there! I'm Lyndolf M. Adrias, a dedicated student seeking personal development. I have an endless curiosity and a strong desire to learn new things, therefore I see every day as a chance to expand my perspective and discover new opportunities.</p>
+            <!-- You can add your video and professional photo here -->
+        </section>
+
+        <section id="education" class="section">
+            <h2>EDUCATION</h2>
+            <p>I am a second year student taking a Bachelor of Science in Information Technology in North West Samar State University</p>
+        </section>
+
+        <section id="skills" class="section">
+            <h2>SKILLS</h2>
+            <p>Highlight your key skills and competencies relevant to your profession or industry.</p>
+        </section>
+
+        <section id="hobbies" class="section">
+            <h2>HOBBIES</h2>
+            <p class="bulleted hobies">
+                <span>Playing Guitar,</span>
+                <span>Singing,</span>
+                <span>Online Games</span>
+            </p>
+        </section>
+
+        <section id="photo" class="section">
+            <h2>PHOTO</h2>
+          
+         <div class="image-grid">
+          <img src="C:\Users\ENERO\Downloads\399948062_3368833430075481_1023499299986855043_n.jpg" alt="Your Professional Photo">
+            <img src="C:\Users\ENERO\Downloads\90079405_2379140999044734_4261797559925735424_n.jpg" alt="Your Professional Photo">
+            <img src="C:\Users\ENERO\Downloads\153072779_2655071941451637_3844555916508118441_n.jpg" alt="Your Professional Photo">
+         </div>
+        </section>
+
+        <section id="contact" class="section">
+            <h2>CONTACT</h2>
+            <p>You can contact me through social media platforms.</p>
+            <p class="bulleted paragraph">
+            <span>FB: Lyndolf Adrias</span>
+            <span>IG: @lyndolfadrias</span>
+            <span>TEL NO. 09518171086</span>
+        </p>
+        </section>
+    </div>
+<script>
+  // Function to show only the selected section
+  function showSection(sectionId) {
+    // Hide all sections
+    var sections = document.querySelectorAll('.section');
+    sections.forEach(function(section) {
+      section.classList.remove('active');
+    });
+    
+    // Show only the selected section
+    var selectedSection = document.getElementById(sectionId);
+    selectedSection.classList.add('active');
+  }
+</script>
+    <footer>
+        <p>&copy; PERSONAL WEBSITE 2024</p>
+    </footer>
+
+</body>
+</html>

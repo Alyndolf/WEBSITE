@@ -1,0 +1,87 @@
+body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+        nav {
+            text-align: center;
+            margin-top: 20px;
+        }
+        nav a {
+            text-decoration: none;
+            color: #333;
+            padding: 10px 20px;
+            background-color: #f4f4f4;
+            border-radius: 5px;
+            margin: 0 5px;
+        }
+        .container {
+            max-width: 900px;
+            margin: auto;
+            padding: 20px;
+        }
+        section {
+            margin-bottom: 40px;
+        }
+        h2 {
+            color: #333;
+        }
+        p {
+            line-height: 1.6;
+        }
+        
+        
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        button {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .section {
+    display: none;
+         }
+  
+  .active {
+    display: block;
+       }
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px; 
+    height: 5px;
+}
+
+.image-grid img {
+    max-width: 100%;
+    height: 50; 
+    width: 200;
+}
+.bulleted-paragraph {
+    list-style-type: disc; /* Use bullets as list style */
+    padding-left: 20px; /* Add some padding to separate bullets from text */
+}
+
+.bulleted-paragraph span {
+    display: block; /* Display each bullet point on a new line */
+}
+.bulleted-hobbies {
+    list-style-type:inherit;
+    padding-left: 20px;
+}
+.bulleted-hobbies span {
+    display: block;
+}
